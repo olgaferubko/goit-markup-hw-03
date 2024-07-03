@@ -6,6 +6,47 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
 .web-logo {
@@ -14,7 +55,6 @@ ul {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    text-decoration: none;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
@@ -25,50 +65,70 @@ ul {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    text-decoration: none;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
 
-.page-nav .link {
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-list .link {
+    padding: 24px 0;
+    display: block;
     font-size: 16px;
     font-weight: 500;
-    text-decoration: none;
     line-height: 1.5;
     color: #2E2F42;
     letter-spacing: 0.02em;
 }
 
-.page-nav .link:active {
+.nav-list .link:active {
     color: #404BBF;
 }
 
-.page-nav .link:hover,
-.page-nav .link:focus {
+.nav-list .link:hover,
+.nav-list .link:focus {
     color: #404BBF;
     text-decoration: underline;
 }
 
 .info {
     font-style: normal;
+    margin-left: auto;
 }
 
-.page-address .link {
+.contact-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-list .link {
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
-    text-decoration: none;
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.page-address .link:hover,
-.page-address .link:focus {
+.contact-list .link:hover,
+.contact-list .link:focus {
     color: #404BBF;
     text-decoration: underline;
 }
 
+
 .block {
     background-color: #2E2F42;
+}
+
+.block-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .page-title {
@@ -78,6 +138,9 @@ ul {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .button-item {
@@ -87,6 +150,12 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 4px;
+    padding: 16px 32px;
+
 }
 
 .button-item:hover,
@@ -95,6 +164,32 @@ ul {
     color: white;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.points-section {
+    padding: 120px 0;
+}
+
+.points {
+    gap: 24px;
+    display: flex;
+}
+
+.points-list {
+    width: calc((100% - 72) / 3);
+}
 
 .points .item-name {
     font-size: 20px;
@@ -103,6 +198,7 @@ ul {
     text-align: left;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .points .point-text {
@@ -126,10 +222,19 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .background-card {
     background-color: white;
+    border-radius: 0 0 4px 4px;
 }
 
 .background-card .member-team {
@@ -157,9 +262,6 @@ ul {
     color: #2e2f42;
 }
 
-.background-port {
-    background-color: #E7E9FC;
-}
 
 .work-name {
     font-size: 20px;

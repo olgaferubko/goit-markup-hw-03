@@ -190,7 +190,7 @@ img {
 }
 
 .points-list {
-    width: calc((100% - 72) / 4);
+    width: calc((100% - 72px) / 4);
 }
 
 .points .item-name {
@@ -288,7 +288,7 @@ img {
 .portfolio-container {
     border: 1px solid #e7e9fc;
     border-top: none;
-    padding-top: 32px 16px; 
+    padding: 32px 16px; 
 }
 
 .work-name {
@@ -318,8 +318,19 @@ img {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+}
+
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    color: #4D5AE5;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     display: inline-block;
     margin-bottom: 16px;
+
 }
 
 .motto {
@@ -327,5 +338,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    height: 72px;
 }
-
